@@ -25,11 +25,6 @@ module.exports = {
 
 Configurações para buildar o projeto em um `bundle.js`
 
-## Rodar o projeto em server
-
-`yarn add webpack-dev-server -D`
-
-Script: `webpack-dev-server --mode development`
 
 ## Import css
 
@@ -44,3 +39,20 @@ rule no `webpack.config.js`
   ]
 }
 ```
+## Import css
+
+rule no `webpack.config.js`
+
+```js
+{
+  test: /.*\.(gif|png|jpe?g)$/i,
+  use: {loader: 'file-loader'}
+}
+```
+
+
+## Rodar o projeto em server
+
+`yarn add webpack-dev-server -D`
+
+Script: `webpack-dev-server --mode development`
