@@ -30,3 +30,17 @@ Configurações para buildar o projeto em um `bundle.js`
 `yarn add webpack-dev-server -D`
 
 Script: `webpack-dev-server --mode development`
+
+## Import css
+
+rule no `webpack.config.js`
+
+```js
+{
+  test: /\.css$/,
+  use: [
+    { loader: 'style-loader' },
+    { loader: 'css-loader' }
+  ]
+}
+```
